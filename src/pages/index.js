@@ -8,23 +8,24 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout >
     <Seo title="WAIS Home" />
+    <p>
+      <Link to="/page-2/">Women in Tech</Link> | 
+      <Link to="/using-typescript/">About Us</Link> | 
+      <Link to="/using-ssr">Upcoming Events</Link> | 
+      <Link to="/using-dsg">Resources</Link>
+    </p>
     <h1>BYU WAIS</h1>
     <h3>Women in Information Systems</h3>
     <p>For women, built by women</p>
     <StaticImage
       src="../images/women-in-tech.jpg"
-      width={300}
+      width={900}
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt="A Woman's Silhouette"
       style={{ marginBottom: `1.45rem` }}
     />
-    <p>
-      <Link to="/page-2/">Women in Tech</Link> |
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    
   </Layout>
 )
 
