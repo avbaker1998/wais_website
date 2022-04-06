@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout >
     <Seo title="WAIS Home" />
     <h1>BYU WAIS</h1>
     <h3>Women in Information Systems</h3>
@@ -16,11 +16,11 @@ const IndexPage = () => (
       width={300}
       quality={95}
       formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
+      alt="A Woman's Silhouette"
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link> |
+      <Link to="/page-2/">Women in Tech</Link> |
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
