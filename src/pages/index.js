@@ -38,3 +38,4 @@ export default IndexPage
 // 2. how to make different html elements like alumni boxes or a top with picture background and white with content on the bottom 
 // 3. Any styling types so it doesnt look like a child made it?
 // 4. how to make and add more to the index page? through layout page?
+// 5. links to buttons?
