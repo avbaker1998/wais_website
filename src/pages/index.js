@@ -19,7 +19,7 @@ const IndexPage = () => (
     <h3>Women in Information Systems</h3>
     <p>For women, built by women</p>
     <StaticImage
-      src="../images/women-in-tech.jpg"
+      src="../images/womens-history-month.jpg"
       width={900}
       quality={95}
       formats={["auto", "webp", "avif"]}
