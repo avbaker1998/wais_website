@@ -12,7 +12,7 @@ const IndexPage = () => (
     <p>
       <Link to="/page-2/">Women in Tech</Link> | 
       <Link to="/using-typescript/">About Us</Link> | 
-      <Link to="/using-ssr">Upcoming Events</Link> | 
+      <Link to="/using-ssr">Upcoming Events</Link>  
       {/* <Link to="/using-dsg">Resources</Link> */}
     </p>
     <h1>BYU WAIS</h1>
