@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#fbeada`,
+      background: `#78231b`,
       color: `#78231b`,
       marginBottom: `1.45rem`,
     fontfamily: `"Georgia", Georgia, serif`,
