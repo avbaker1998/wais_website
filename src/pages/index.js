@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout >
     <Seo title="WAIS Home" />
     <p>
-      <button to="/page-2/">Women in Tech</button> | 
+      <Link to="/page-2/">Women in Tech</Link> | 
       <Link to="/using-typescript/">About Us</Link> | 
       <Link to="/using-ssr">Upcoming Events</Link>  
       {/* <Link to="/using-dsg">Resources</Link> */}
