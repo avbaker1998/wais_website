@@ -13,12 +13,14 @@ const PersonGrid = styled.div`
   gap: 20px;
   align-items: center;
   justify-content: center;
+  font-family: "Georgia", Georgia, serif;
 `
 
 const HeroHeader = styled.header`
   text-align: center;
   z-index: 10;
   position: relative;
+  font-family: "Georgia", Georgia, serif;
 
   h1 {
     margin: 0;
@@ -27,6 +29,7 @@ const HeroHeader = styled.header`
   h3 {
     margin: 0;
     margin-bottom: 8px;
+    color: white;
   }
 `
 
@@ -34,9 +37,8 @@ const IndexPage = () => (
   <Layout>
     <Seo title="WAIS Home" />
     <HeroHeader>
-      <h1>BYU WAIS</h1>
-      <h3>Women in Information Systems</h3>
-      <p>For women, built by women</p>
+      <h1>Women in Information Systems</h1>
+      <h3>For women, built by women</h3>
     </HeroHeader>
     <StaticImage
       src="../images/womens-history-month.jpg"
@@ -46,9 +48,9 @@ const IndexPage = () => (
       alt="A Woman's Silhouette"
       style={{
         marginBottom: `1.45rem`,
-        marginTop: "-48px",
+        marginTop: "-100px",
         zIndex: 1,
-        position: "relative",
+        // position: "relative",
       }}
     />
     <PersonGrid>

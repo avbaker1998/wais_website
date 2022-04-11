@@ -4,8 +4,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledLink = styled(Link)`
-  color: black;
-  background: white;
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
