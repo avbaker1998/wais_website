@@ -43,9 +43,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div>
-        <StyledLink to="/page-2/">Women in Tech</StyledLink>
+        <StyledLink to="/index/">Home</StyledLink>
         <StyledLink to="/using-typescript/">About Us</StyledLink>
+        <StyledLink to="/page-2/">Women in Tech</StyledLink>
         <StyledLink to="/using-ssr">Upcoming Events</StyledLink>
+        <StyledLink to="/contact/">Contact</StyledLink>
       </div>
     </div>
   </header>

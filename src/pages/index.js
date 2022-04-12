@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { nominalTypeHack } from "prop-types"
 import PersonCard from "../components/PersonCard"
+import BottomHome from "../components/BottomHome"
 
 const PersonGrid = styled.div`
   display: flex;
@@ -39,6 +40,14 @@ const HeroHeader = styled.header`
   }
 `
 
+const Section = styled.section`
+  background: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+`
+
 const IndexPage = () => (
   <Layout>
     <Seo title="WAIS Home" />
@@ -48,7 +57,7 @@ const IndexPage = () => (
     </HeroHeader>
     <StaticImage
       src="../images/4 women.jpg"
-      width={800}
+      width={900}
       quality={100}
       formats={["auto", "webp", "avif"]}
       alt="A Woman's Silhouette"
@@ -59,6 +68,30 @@ const IndexPage = () => (
         position: "relative",
       }}
     />
+    <Section>
+      <div>hello</div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </Section>
     {/* <PersonGrid>
       <PersonCard />
       <PersonCard />
