@@ -20,16 +20,22 @@ const HeroHeader = styled.header`
   text-align: center;
   z-index: 10;
   position: relative;
-  font-family: "Georgia", Georgia, serif;
 
   h1 {
     margin: 0;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #fef3ec;
+    font-size: 3.5rem;
+    font-family: "Cormorant Garamond", serif;
   }
 
   h3 {
     margin: 0;
-    margin-bottom: 8px;
-    color: white;
+    margin-bottom: 25px;
+    color: #fef3ec;
+    font-weight: lighter;
+    font-family: "josefin sans", sans-serif;
   }
 `
 
@@ -38,26 +44,26 @@ const IndexPage = () => (
     <Seo title="WAIS Home" />
     <HeroHeader>
       <h1>Women in Information Systems</h1>
-      <h3>For women, built by women</h3>
+      <h3>Brigham Young University WAIS</h3>
     </HeroHeader>
     <StaticImage
-      src="../images/womens-history-month.jpg"
-      width={900}
-      quality={95}
+      src="../images/4 women.jpg"
+      width={800}
+      quality={100}
       formats={["auto", "webp", "avif"]}
       alt="A Woman's Silhouette"
       style={{
         marginBottom: `1.45rem`,
-        marginTop: "-100px",
+        marginTop: "-5px",
         zIndex: 1,
-        // position: "relative",
+        position: "relative",
       }}
     />
-    <PersonGrid>
+    {/* <PersonGrid>
       <PersonCard />
       <PersonCard />
       <PersonCard />
-    </PersonGrid>
+    </PersonGrid> */}
   </Layout>
 )
 

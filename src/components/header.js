@@ -9,15 +9,16 @@ const StyledLink = styled(Link)`
   border-radius: 4px;
   text-decoration: none;
   margin-left: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
 `
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#78231b`,
-      color: `#78231b`,
+      background: `#ce8c74`,
+      color: `#ce8c74`,
       marginBottom: `1.45rem`,
-      fontfamily: `"Georgia", Georgia, serif`,
     }}
   >
     <div
@@ -38,7 +39,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {/* {siteTitle} */}
         </Link>
       </h1>
       <div>
