@@ -97,12 +97,12 @@ const About = () => (
           </p>
           <div className="images">
             <StaticImage
-              src="..\images\gala girls.jpg"
+              src="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649890638/gala_girls_lztwcl.jpg"
               alt="WAIS event"
               quality={100}
             />
             <StaticImage
-              src="..\images\Image from iOS (9).jpg"
+              src="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649890638/Image_from_iOS_9_byyiqg.jpg"
               alt="WAIS event"
               quality={100}
             />
