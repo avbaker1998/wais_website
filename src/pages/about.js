@@ -28,29 +28,16 @@ const HeroHeader = styled.header`
   }
 `
 
-const StyledLink = styled(Link)`
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-left: 2px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: lighter;
-`
-
-const Contact = () => (
+const About = () => (
   <Layout>
     <HeroHeader>
-      <Seo title="Contact Us" />
-      <h1>Contact Us</h1>
-      <h3>
-        If you are interested in joining WAIS or have any questions, feel free
-        to reach out!
-      </h3>
-      {/* make a component for the contact page with basic websites, slack links, and  contact info for me and katy */}
-      <StyledLink to="/">Go back to the homepage</StyledLink>
+      <Seo title="Women in Tech" />
+      <h1>Women in Tech</h1>
+      <h3>Meet other women in tech! Connect with other students and alumni!</h3>
+      {/* add components here to add in alumni and such */}
+      <Link to="/">Go back to the homepage</Link>
     </HeroHeader>
   </Layout>
 )
 
-export default Contact
+export default About

@@ -6,8 +6,9 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { nominalTypeHack } from "prop-types"
-import PersonCard from "../components/PersonCard"
+import CardItem from "../components/CardItem"
 import BottomHome from "../components/BottomHome"
+import Cards from "../components/Cards"
 
 const PersonGrid = styled.div`
   display: flex;
@@ -48,54 +49,124 @@ const Section = styled.section`
   position: relative;
 `
 
+const ContentSection = styled.section`
+  display: flex;
+  gap: 48px;
+  padding: 24px 0;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  img {
+    border: 12px solid #fef3ec;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+const BackgroundSection = styled.div`
+  background: white;
+`
+
+const MainSection = styled.main`
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+`
+
+const Hero = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const IndexPage = () => (
   <Layout>
     <Seo title="WAIS Home" />
-    <HeroHeader>
-      <h1>Women in Information Systems</h1>
-      <h3>Brigham Young University WAIS</h3>
-    </HeroHeader>
-    <StaticImage
-      src="../images/4 women.jpg"
-      width={900}
-      quality={100}
-      formats={["auto", "webp", "avif"]}
-      alt="A Woman's Silhouette"
-      style={{
-        marginBottom: `1.45rem`,
-        marginTop: "-5px",
-        zIndex: 1,
-        position: "relative",
-      }}
-    />
-    <Section>
-      <div>hello</div>
+    <Hero>
+      <HeroHeader>
+        <h1>Women in Information Systems</h1>
+        <h3>Brigham Young University WAIS</h3>
+      </HeroHeader>
+
+      <StaticImage
+        src="../images/4 women.jpg"
+        width={900}
+        quality={100}
+        formats={["auto", "webp", "avif"]}
+        alt="A Woman's Silhouette"
+        style={{
+          margin: "0 auto",
+          zIndex: 1,
+          position: "relative",
+        }}
+      />
+    </Hero>
+
+    <BackgroundSection>
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </Section>
+      <MainSection>
+        <ContentSection>
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <Link to="/about">Learn More</Link>
+          </div>
+          <StaticImage src="../images/IMG_0119.jpg" alt="WAIS event" />
+        </ContentSection>
+        <br />
+        <br />
+        <br />
+        <ContentSection>
+          <StaticImage src="../images/IMG_0119.jpg" alt="WAIS event" />
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <Link to="/about">Learn More</Link>
+          </div>
+        </ContentSection>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </MainSection>
+    </BackgroundSection>
+
+    {/* <Cards /> */}
+    {/* <Section>
+      
+    </Section> */}
     {/* <PersonGrid>
-      <PersonCard />
-      <PersonCard />
-      <PersonCard />
+      <CardItem />
+      <CardItem />
+      <CardItem />
     </PersonGrid> */}
   </Layout>
 )
