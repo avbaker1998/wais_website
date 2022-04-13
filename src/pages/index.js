@@ -174,7 +174,7 @@ const IndexPage = () => (
         <br />
         <ContentSection>
           <StaticImage
-            src="..\images\IMG_0019.jpg"
+            src="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649811653/IMG_0019_tx3pbx.jpg"
             alt="WAIS event"
             quality={100}
           />
