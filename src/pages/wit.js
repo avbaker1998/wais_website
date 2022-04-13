@@ -20,11 +20,37 @@ const HeroHeader = styled.header`
     font-family: "Cormorant Garamond", serif;
   }
 
+  h2 {
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #fef3ec;
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+
   h3 {
     margin: 0;
     margin-bottom: 25px;
     color: #fef3ec;
     font-weight: lighter;
+    font-family: "josefin sans", sans-serif;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 25px;
+    color: #fef3ec;
+    font-weight: lighter;
+    font-size: 1rem;
+    font-family: "josefin sans", sans-serif;
+  }
+  a {
+    margin: 0;
+    margin-bottom: 25px;
+    color: #fef3ec;
+    font-weight: lighter;
+    font-size: 1rem;
     font-family: "josefin sans", sans-serif;
   }
 `
@@ -43,28 +69,50 @@ const SecondPage = () => (
       <Seo title="Women in Tech" />
       <h1>Women in Tech</h1>
       <h3>Meet other women in tech! Connect with other students and alumni!</h3>
+      <br />
       <CardGrid>
         <CardItem
-          name="Alle"
-          imgSrc="https://images.unsplash.com/photo-1585156569731-4c5b959234f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
-          bio="The best!"
-          contact="Slack"
+          name="Caroline Crane"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649872595/caroline_wbonfz.jpg"
+          bio="Master of Information Systems Management student | BYU AIS Co-President"
+          contact="https://www.linkedin.com/in/caroline-crane/"
         />
         <CardItem
-          name="Alle"
-          imgSrc="https://images.unsplash.com/photo-1585156569731-4c5b959234f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
-          bio="The best!"
-          contact="Slack"
+          name="Joslyn Orgill"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649875572/Image_from_iOS_8_cdqsp5.jpg"
+          bio="Cloud Technical Residency at Google | 2022 BYU MISM Graduate"
+          contact="https://www.linkedin.com/in/joslyn-orgill/"
         />
         <CardItem
-          name="Alle"
-          imgSrc="https://images.unsplash.com/photo-1585156569731-4c5b959234f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
-          bio="The best!"
-          contact="Slack"
+          name="Bonnie Anderson"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649872653/bonnie2_ubulsf.jpg"
+          bio="Assitant Dean of the Marriot School | Brigham Young University and Carnegie Mellon University Graduate"
+          contact="https://www.linkedin.com/in/bonnie-brinton-anderson-12677111/"
+        />
+        <CardItem
+          name="Maggie Jensen"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649871750/IMG_8360_qcxlya.jpg"
+          bio="Data Engineer at Walt Disney Studios | 2022 BYU MISM Graduate"
+          contact="https://www.linkedin.com/in/maggie-jensen/"
+        />
+        <CardItem
+          name="Lilia Brown"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649876756/IMG-4341_lrxfha.jpg"
+          bio="Master of Information Systems Management student | Research Assistant at BYU"
+          contact="https://www.linkedin.com/in/brown-lilia/"
+        />
+        <CardItem
+          name="Brittany Fromm"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649871891/FrommBrittany_Online_pixbqm.jpg"
+          bio="NOC Engineer at TaxBit | 2022 BYU MISM Graduate"
+          contact="https://www.linkedin.com/in/brittany-fromm/"
         />
       </CardGrid>
-      <Link to="/">Go back to the homepage</Link>
+      {/* <Link to="/">Go back to the homepage</Link> */}
     </HeroHeader>
+    <br />
+    <br />
+    <br />
   </Layout>
 )
 

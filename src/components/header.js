@@ -50,7 +50,8 @@ const Header = ({ siteTitle }) => (
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/about/">About Us</StyledLink>
         <StyledLink to="/wit/">Women in Tech</StyledLink>
-        <StyledLink to="/using-ssr">Upcoming Events</StyledLink>
+        <StyledLink to="/using-ssr">Events</StyledLink>
+        {/* <StyledLink to="/gallery">Gallery</StyledLink> */}
         <StyledLink to="/contact/">Contact</StyledLink>
       </div>
     </div>

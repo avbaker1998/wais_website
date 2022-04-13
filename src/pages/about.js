@@ -87,7 +87,7 @@ const About = () => (
           </p>
           <div className="images">
             <StaticImage
-              src="..\images\Image from iOS (8).jpg"
+              src="..\images\gala girls.jpg"
               alt="WAIS event"
               quality={100}
             />
