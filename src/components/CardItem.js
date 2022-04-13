@@ -11,6 +11,7 @@ const Card = styled.div`
   font-size: 1.5rem;
   font-family: "Cormorant Garamond", serif;
   text-align: left;
+  text-decoration: none;
 
   h2 {
     font-size: 2rem;
@@ -24,7 +25,9 @@ export default function CardItem({ name, imgSrc, bio, contact }) {
   return (
     <Card>
       <h2>{name}</h2>
-      <img src={imgSrc} alt={name} />
+      <div>
+        <img src={imgSrc} alt={name} />
+      </div>
       <p>{bio}</p>
       <a href={contact}>LinkedIn</a>
     </Card>

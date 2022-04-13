@@ -83,6 +83,8 @@ const ColumnOfLinks = styled.div`
     font-family: "Josefin Sans", sans-serif;
     font-weight: lighter;
   }
+  a:hover {
+    text-decoration: underline;
 
   p {
     color: #fef3ec;
@@ -102,6 +104,10 @@ const StyledLink = styled(Link)`
   margin-left: 2px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const Layout = ({ children }) => {

@@ -52,6 +52,10 @@ const HeroHeader = styled.header`
     font-weight: lighter;
     font-size: 1rem;
     font-family: "josefin sans", sans-serif;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `
 const CardGrid = styled.div`
@@ -106,6 +110,24 @@ const SecondPage = () => (
           imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649871891/FrommBrittany_Online_pixbqm.jpg"
           bio="NOC Engineer at TaxBit | 2022 BYU MISM Graduate"
           contact="https://www.linkedin.com/in/brittany-fromm/"
+        />
+        <CardItem
+          name="Mckaylee Olson"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649879931/Image_from_iOS_3_2_myjgdt.jpg"
+          bio="Information Systems Junior Core student | Marketing Data Analyst for Adojo"
+          contact="https://www.linkedin.com/in/mckayleeolson/"
+        />
+        <CardItem
+          name="Brittany Coon"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649880522/1_1_1_e1y1s7.jpg"
+          bio="Senior Consultant at Anglepoint | 2016 BYU MISM Graduate"
+          contact="https://www.linkedin.com/in/brittanycoon/"
+        />
+        <CardItem
+          name="Cadie Christensen"
+          imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649880790/Image_from_iOS_9_yjujeg.jpg"
+          bio="Associate Security Consultant at NetSPI | 2022 BYU MISM Graduate"
+          contact="https://www.linkedin.com/in/cadie-perkins/"
         />
       </CardGrid>
       {/* <Link to="/">Go back to the homepage</Link> */}

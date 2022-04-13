@@ -15,6 +15,9 @@ const StyledLink = styled(Link)`
   @media (max-width: 480px) {
     flex-direction: ;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const Header = ({ siteTitle }) => (

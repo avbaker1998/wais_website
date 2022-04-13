@@ -29,6 +29,10 @@ const StyledLink = styled(Link)`
   font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   text-align: justify;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const HeroHeader = styled.header`
@@ -82,8 +86,8 @@ const ContentSection = styled.section`
     padding: 0;
     margin-bottom: 12px;
     font-size: 1rem;
-    font-weight: normal;
-    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-family: "josefin sans", sans-serif;
     text-align: justify;
   }
 
@@ -145,14 +149,17 @@ const IndexPage = () => (
         <ContentSection>
           <div>
             <StyledLink to="/about">About Us</StyledLink>
+            <br />
+            <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The Women in Information Systems (WAIS) organization was founded
+              with the mission to support, connect, and empower women in the
+              Information Systems field. The three main purposes of WAIS are to
+              create a community of women within IS, foster mentorship as
+              empowered women empower women, and network with alumni and
+              companies to bring incredible career opportunities to those within
+              WAIS. WAIS has been successful in creating a supportive community
+              for women in technology.
             </p>
             {/* <Link to="/about">Learn More</Link> */}
           </div>
@@ -173,14 +180,16 @@ const IndexPage = () => (
           />
           <div>
             <StyledLink to="/wit">Connect with Women in Tech</StyledLink>
+            <br />
+            <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              One of the key ways WAIS supports its members is through
+              mentorship. The organization offers a variety of mentorship
+              programs, including an online mentor directory, and a community of
+              mentors. WAIS also works to connect its members with incredible
+              career opportunities. Mentors share their own experiences and
+              knowledge with students, and help them develop the skills they
+              need to succeed in the field of Information Systems.
             </p>
             {/* <Link to="/about">Learn More</Link> */}
           </div>
