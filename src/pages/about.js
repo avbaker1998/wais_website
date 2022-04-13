@@ -52,6 +52,7 @@ const HeroHeader = styled.header`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 16px;
   }
 `
 const BackgroundSection = styled.div`
