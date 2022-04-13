@@ -60,6 +60,10 @@ const HeroHeader = styled.header`
     font-weight: lighter;
     font-size: 1rem;
     font-family: "josefin sans", sans-serif;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `
 const ColumnOfLinks = styled.div`
@@ -115,6 +119,12 @@ const StyledLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 `
 
 const Contact = () => (
@@ -135,7 +145,7 @@ const Contact = () => (
         <CardItem
           name="Allessandra Baker"
           imgSrc="https://res.cloudinary.com/dmvxvrwjd/image/upload/v1649874893/IMG_0208_orzly0.jpg"
-          bio="Master of Information Systems Management student | WAIS President"
+          bio="Master of Information Systems Management student | Production Engineer Intern at Lucasfilms | WAIS President"
           contact="https://www.linkedin.com/in/allessandra-baker/"
         />
         <CardItem
