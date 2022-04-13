@@ -21,10 +21,14 @@ const Footer = styled.footer`
   text-align: center;
   margin-bottom: 0;
   height: auto;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   right: 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   a.join {
     color: #fef3ec;

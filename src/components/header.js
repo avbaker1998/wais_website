@@ -11,6 +11,10 @@ const StyledLink = styled(Link)`
   margin-left: 2px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
+
+  @media (max-width: 480px) {
+    flex-direction: ;
+  }
 `
 
 const Header = ({ siteTitle }) => (

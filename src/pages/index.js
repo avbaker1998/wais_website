@@ -17,6 +17,19 @@ const PersonGrid = styled.div`
   justify-content: center;
   font-family: "Georgia", Georgia, serif;
 `
+const StyledLink = styled(Link)`
+  color: #1f0d09;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 2px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  text-align: justify;
+`
 
 const HeroHeader = styled.header`
   text-align: center;
@@ -42,7 +55,7 @@ const HeroHeader = styled.header`
 `
 
 const Section = styled.section`
-  background: white;
+  background: #fef3ec;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -54,17 +67,30 @@ const ContentSection = styled.section`
   gap: 48px;
   padding: 24px 0;
 
-  h2 {
+  h2,
+  Link {
     margin: 0;
     padding: 0;
     margin-bottom: 12px;
     font-size: 2rem;
     font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Cormorant Garamond", serif;
+    text-align: justify;
   }
 
   img {
-    border: 12px solid #fef3ec;
-    border-radius: 4px;
+    // border: 5px solid #1f0d09;
+    // border-radius: 4px;
+    shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 768px) {
@@ -73,7 +99,7 @@ const ContentSection = styled.section`
 `
 
 const BackgroundSection = styled.div`
-  background: white;
+  background: #fef3ec; ;
 `
 
 const MainSection = styled.main`
@@ -118,7 +144,7 @@ const IndexPage = () => (
       <MainSection>
         <ContentSection>
           <div>
-            <h2>About Us</h2>
+            <StyledLink to="/about">About Us</StyledLink>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -128,17 +154,25 @@ const IndexPage = () => (
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <Link to="/about">Learn More</Link>
+            {/* <Link to="/about">Learn More</Link> */}
           </div>
-          <StaticImage src="../images/IMG_0119.jpg" alt="WAIS event" />
+          <StaticImage
+            src="../images/IMG_0119.jpg"
+            alt="WAIS event"
+            quality={100}
+          />
         </ContentSection>
         <br />
         <br />
         <br />
         <ContentSection>
-          <StaticImage src="../images/IMG_0119.jpg" alt="WAIS event" />
+          <StaticImage
+            src="..\images\IMG_0019.jpg"
+            alt="WAIS event"
+            quality={100}
+          />
           <div>
-            <h2>About Us</h2>
+            <StyledLink to="/wit">Connect with Women in Tech</StyledLink>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -148,7 +182,7 @@ const IndexPage = () => (
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <Link to="/about">Learn More</Link>
+            {/* <Link to="/about">Learn More</Link> */}
           </div>
         </ContentSection>
         <br />
